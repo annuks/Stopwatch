@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" type="text/css" href="stopwatch.css" />
+    <script src="stopwatch.js"></script>
+  </head>
+  <body>
+    <!-- main container  -->
+    <div id="parent-container">
+      <div id="heading">Stopwatch</div>
+      <!-- container for displaying time in given format -->
+      <div id="display-container">
+        <div class="display-container-item">
+          <div id="notation">
+            <span>hh:</span>
+            <span>mm:</span>
+            <span>ss:</span>
+            <span>ms</span>
+          </div>
+          <div>
+            <span id="Hour">00</span>
+            <span id="Minute">00</span>: <span id="Sec">00</span>:
+            <span id="Milisec">00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- button container -->
+      <div class="container">
+        <div id="button-container">
+          <button id="startbtn" onclick="startStopwatch()">Start</button>
+          <button id="stopbtn" onclick="stopStopwatch()">Stop</button>
+          <button id="resetbtn" onclick="resetStopwatch()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
